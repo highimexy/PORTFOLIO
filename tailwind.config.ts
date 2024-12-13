@@ -9,8 +9,6 @@ export default {
   ],
   theme: {
     extend: {
-
-       
       colors: {
         primary: '#1c1c22',
         accent: {
@@ -24,15 +22,15 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       fontFamily: {
-        primary: "var(--font-jetbrainsMono)", // Corrected key
+        primary: "var(--font-jetbrainsMono)",
+      },
+      screens: {
+        sm: '640px',
+        md: '768px',
+        lg: '960px',
+        xl: '1200px',
       },
     },
-  },
-  screens: {
-    sm: '640px',
-    md: '768px',
-    lg: '960px',
-    xl: '1200px',
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
